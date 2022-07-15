@@ -38,7 +38,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("https://d3se4qed82.execute-api.ca-central-1.amazonaws.com/dev", requestOptions)
+            fetch("https://d3se4qed82.execute-api.ca-central-1.amazonaws.com/dev/callMySQL", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
